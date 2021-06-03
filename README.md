@@ -45,7 +45,7 @@ Versions do not need to match on all nodes as long as its there.
 ### Installation
 Installing the App is pretty Simple on client and server
 ```
-bench get-app https://github.com/Andriesvn/symmetricds_integration.git
+bench get-app symmetricds_integration https://github.com/Andriesvn/symmetricds_integration.git
 ```
 Then add it to the site|s 
 ```
