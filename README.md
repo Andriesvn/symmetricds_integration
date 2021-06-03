@@ -92,6 +92,10 @@ To Setup a Full Server to Server Bidirectional Replication (NO Sub Filtering yet
 
 Remember to replace the Node group Names "master" and "backup" with those you wish to use for your master and client.
 This will create all channels, triggers, links and 2 node groups needed for full bidirectional replication based on your modules and doctypes currently in the database.
+```
+apps/symmetricds_integration/symmetric_server/bin/dbimport --engine engine_name apps/symmetricds_integration/symmetric_server/samples/insert_sample.sql
+```
+
 This will be implemented to be created on setup in future
 
 
