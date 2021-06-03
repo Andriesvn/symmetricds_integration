@@ -169,7 +169,6 @@ doctype=None, fields=None, filters=None, order_by=None, start=None, page_length=
         {2} 
         {3}
         {4}""".format(select,"where" if conditions else "", conditions if conditions else "", orderby, limit)
-    print('Select Statement:',select_statment)
     items = frappe.db.sql(select_statment, values,
         as_list= as_list, 
         as_dict= not(as_list))
