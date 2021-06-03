@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "autoname": "format:{node_id}::{host_name}::{start_time}::{end_time}",
+ "creation": "2021-05-28 17:52:39.910806",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "node_id",
+  "host_name",
+  "column_break_3",
+  "start_time",
+  "end_time",
+  "section_break_6",
+  "restarted",
+  "total_nodes_pull_time",
+  "total_nodes_push_time",
+  "nodes_registered",
+  "nodes_disabled",
+  "purged_data_event_rows",
+  "purged_batch_incoming_rows",
+  "triggers_rebuilt_count",
+  "column_break_15",
+  "nodes_pulled",
+  "nodes_pushed",
+  "nodes_rejected",
+  "nodes_loaded",
+  "purged_data_rows",
+  "purged_batch_outgoing_rows",
+  "triggers_created_count",
+  "triggers_removed_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "node_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node",
+   "options": "Node",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "host_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Host Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Time",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "restarted",
+   "fieldtype": "Int",
+   "label": "Restarted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_nodes_pull_time",
+   "fieldtype": "Int",
+   "label": "Total Nodes Pull Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_nodes_push_time",
+   "fieldtype": "Int",
+   "label": "Total Nodes Push Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nodes_registered",
+   "fieldtype": "Int",
+   "label": "Nodes Registered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nodes_disabled",
+   "fieldtype": "Int",
+   "label": "Nodes Disabled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purged_data_event_rows",
+   "fieldtype": "Int",
+   "label": "Purged Data Event Rows",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purged_batch_incoming_rows",
+   "fieldtype": "Int",
+   "label": "Purged Batch Incoming Rows",
+   "read_only": 1
+  },
+  {
+   "fieldname": "triggers_rebuilt_count",
+   "fieldtype": "Int",
+   "label": "Triggers Rebuilt Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nodes_pulled",
+   "fieldtype": "Int",
+   "label": "Nodes Pulled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nodes_pushed",
+   "fieldtype": "Int",
+   "label": "Nodes Pushed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nodes_rejected",
+   "fieldtype": "Int",
+   "label": "Nodes Rejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nodes_loaded",
+   "fieldtype": "Int",
+   "label": "Nodes Loaded",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purged_data_rows",
+   "fieldtype": "Int",
+   "label": "Purged Data Rows",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purged_batch_outgoing_rows",
+   "fieldtype": "Int",
+   "label": "Purged Batch Outgoing Rows",
+   "read_only": 1
+  },
+  {
+   "fieldname": "triggers_created_count",
+   "fieldtype": "Int",
+   "label": "Triggers Created Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "triggers_removed_count",
+   "fieldtype": "Int",
+   "label": "Triggers Removed Count",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-28 17:52:39.910806",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Node Host Stats",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

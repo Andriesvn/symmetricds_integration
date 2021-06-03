@@ -1,0 +1,9 @@
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+symmetricds_integration/docs/current
+symmetric_server/tmp/*
+symmetric_server/logs/*
+symmetric_server/engines/*

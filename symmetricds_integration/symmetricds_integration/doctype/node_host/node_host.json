@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "autoname": "format:{node_id}::{host_name}",
+ "creation": "2021-05-28 17:14:55.272176",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "node_id",
+  "instance_id",
+  "column_break_3",
+  "host_name",
+  "ip_address",
+  "section_break_6",
+  "os_user",
+  "os_arch",
+  "available_processors",
+  "total_memory_bytes",
+  "java_version",
+  "jdbc_version",
+  "timezone_offset",
+  "last_restart_time",
+  "column_break_15",
+  "os_name",
+  "os_version",
+  "free_memory_bytes",
+  "max_memory_bytes",
+  "java_vendor",
+  "symmetric_version",
+  "heartbeat_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "node_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node",
+   "options": "Node",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "instance_id",
+   "fieldtype": "Data",
+   "label": "Instance Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "host_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Host Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ip Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "os_user",
+   "fieldtype": "Data",
+   "label": "OS User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "os_arch",
+   "fieldtype": "Data",
+   "label": "OS Arch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_processors",
+   "fieldtype": "Data",
+   "label": "Available Processors",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_memory_bytes",
+   "fieldtype": "Int",
+   "label": "Total Memory (bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "java_version",
+   "fieldtype": "Data",
+   "label": "Java Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jdbc_version",
+   "fieldtype": "Data",
+   "label": "JDBC Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "timezone_offset",
+   "fieldtype": "Data",
+   "label": "Timezone Offset",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_restart_time",
+   "fieldtype": "Datetime",
+   "label": "Last Restart Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "os_name",
+   "fieldtype": "Data",
+   "label": "OS Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "os_version",
+   "fieldtype": "Data",
+   "label": "OS Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "free_memory_bytes",
+   "fieldtype": "Int",
+   "label": "Free Memory (bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "max_memory_bytes",
+   "fieldtype": "Int",
+   "label": "Max Memory (bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "java_vendor",
+   "fieldtype": "Data",
+   "label": "Java Vendor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "symmetric_version",
+   "fieldtype": "Data",
+   "label": "Symmetric Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "heartbeat_time",
+   "fieldtype": "Datetime",
+   "label": "Heartbeat Time",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-28 17:14:55.272176",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Node Host",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

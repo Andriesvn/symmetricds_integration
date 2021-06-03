@@ -1,0 +1,394 @@
+{
+ "actions": [],
+ "autoname": "field:trigger_id",
+ "creation": "2021-05-26 13:59:01.921963",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trigger_id",
+  "source_table_name",
+  "channel_id",
+  "reload_channel_id",
+  "column_break_5",
+  "sync_on_insert",
+  "sync_on_update",
+  "sync_on_delete",
+  "sync_on_incoming_batch",
+  "section_break_10",
+  "description",
+  "trigger_config",
+  "included_column_names",
+  "excluded_column_names",
+  "sync_key_names",
+  "column_break_16",
+  "use_stream_lobs",
+  "use_capture_lobs",
+  "use_capture_old_data",
+  "use_handle_key_updates",
+  "stream_row",
+  "schema_details_section",
+  "source_catalog_name",
+  "column_break_24",
+  "source_schema_name",
+  "expressions_section",
+  "external_select",
+  "column_break_28",
+  "tx_id_expression",
+  "column_break_30",
+  "channel_expression",
+  "sync_conditions_section",
+  "sync_on_insert_condition",
+  "column_break_34",
+  "sync_on_update_condition",
+  "column_break_36",
+  "sync_on_delete_condition",
+  "custom_text_section",
+  "custom_before_insert_text",
+  "custom_on_insert_text",
+  "column_break_41",
+  "custom_before_update_text",
+  "custom_on_update_text",
+  "column_break_44",
+  "custom_before_delete_text",
+  "custom_on_delete_text",
+  "naming_section",
+  "name_for_insert_trigger",
+  "column_break_49",
+  "name_for_update_trigger",
+  "column_break_51",
+  "name_for_delete_trigger"
+ ],
+ "fields": [
+  {
+   "fieldname": "trigger_id",
+   "fieldtype": "Data",
+   "label": "Trigger Id",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "source_table_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source Table",
+   "options": "DB Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "channel_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Channel",
+   "options": "Channel",
+   "reqd": 1
+  },
+  {
+   "default": "reload",
+   "fieldname": "reload_channel_id",
+   "fieldtype": "Link",
+   "label": "Reload Channel",
+   "options": "Channel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "sync_on_insert",
+   "fieldtype": "Check",
+   "label": "Sync on Insert",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "sync_on_update",
+   "fieldtype": "Check",
+   "label": "Sync on Update",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "sync_on_delete",
+   "fieldtype": "Check",
+   "label": "Sync on Delete",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sync_on_incoming_batch",
+   "fieldtype": "Check",
+   "label": "Sync on Incoming Batch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "trigger_config",
+   "fieldtype": "Section Break",
+   "label": "Trigger Config"
+  },
+  {
+   "fieldname": "included_column_names",
+   "fieldtype": "Data",
+   "label": "Included Columns"
+  },
+  {
+   "fieldname": "excluded_column_names",
+   "fieldtype": "Data",
+   "label": "Excluded Columns"
+  },
+  {
+   "fieldname": "sync_key_names",
+   "fieldtype": "Data",
+   "label": "Sync Key Columns"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "use_stream_lobs",
+   "fieldtype": "Check",
+   "label": "Use Stream lobs",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "use_capture_lobs",
+   "fieldtype": "Check",
+   "label": "Use Capture lobs",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "use_capture_old_data",
+   "fieldtype": "Check",
+   "label": "Use capture old data",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "use_handle_key_updates",
+   "fieldtype": "Check",
+   "label": "Use Handle Key Updates",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "stream_row",
+   "fieldtype": "Check",
+   "label": "Stream Row",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "schema_details_section",
+   "fieldtype": "Section Break",
+   "label": "Schema Details"
+  },
+  {
+   "fieldname": "source_catalog_name",
+   "fieldtype": "Data",
+   "label": "Source Catalog"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_schema_name",
+   "fieldtype": "Data",
+   "label": "Source Schema"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "expressions_section",
+   "fieldtype": "Section Break",
+   "label": "Expressions"
+  },
+  {
+   "fieldname": "external_select",
+   "fieldtype": "Code",
+   "label": "External Select"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tx_id_expression",
+   "fieldtype": "Code",
+   "label": "Transaction ID Expression"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "channel_expression",
+   "fieldtype": "Code",
+   "label": "Channel Expression"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sync_conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Sync Conditions"
+  },
+  {
+   "fieldname": "sync_on_insert_condition",
+   "fieldtype": "Code",
+   "label": "Sync on Insert Condition"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sync_on_update_condition",
+   "fieldtype": "Code",
+   "label": "Sync on Update Condition"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sync_on_delete_condition",
+   "fieldtype": "Code",
+   "label": "Sync on Delete Condition"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "custom_text_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Text"
+  },
+  {
+   "fieldname": "custom_before_insert_text",
+   "fieldtype": "Code",
+   "label": "Custom Before Insert Text"
+  },
+  {
+   "fieldname": "custom_on_insert_text",
+   "fieldtype": "Code",
+   "label": "Custom On Insert Text"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_before_update_text",
+   "fieldtype": "Code",
+   "label": "Custom Before Update Text"
+  },
+  {
+   "fieldname": "custom_on_update_text",
+   "fieldtype": "Code",
+   "label": "Custom On Update Text"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_before_delete_text",
+   "fieldtype": "Code",
+   "label": "Custom Before Delete Text"
+  },
+  {
+   "fieldname": "custom_on_delete_text",
+   "fieldtype": "Code",
+   "label": "Custom On Delete Text"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "naming_section",
+   "fieldtype": "Section Break",
+   "label": "Naming"
+  },
+  {
+   "fieldname": "name_for_insert_trigger",
+   "fieldtype": "Data",
+   "label": "Name for Insert Trigger"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_for_update_trigger",
+   "fieldtype": "Data",
+   "label": "Name for Update Trigger"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_for_delete_trigger",
+   "fieldtype": "Data",
+   "label": "Name for Delete Trigger"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [
+  {
+   "group": "Config",
+   "link_doctype": "Trigger Router",
+   "link_fieldname": "trigger_id"
+  },
+  {
+   "group": "Config",
+   "link_doctype": "Table Reload Request",
+   "link_fieldname": "trigger_id"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Trigger History",
+   "link_fieldname": "trigger_id"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Extract Request",
+   "link_fieldname": "trigger_id"
+  }
+ ],
+ "modified": "2021-06-02 14:06:43.287673",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Trigger",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

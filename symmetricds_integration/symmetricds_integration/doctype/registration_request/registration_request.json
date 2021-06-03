@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "autoname": "format:{node_group_id}::{external_id}",
+ "creation": "2021-05-31 10:24:50.488893",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "node_group_id",
+  "external_id",
+  "column_break_3",
+  "host_name",
+  "status",
+  "section_break_6",
+  "error_message",
+  "column_break_8",
+  "ip_address",
+  "registered_node_id",
+  "attempt_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Node Group",
+   "options": "Node Group",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "external_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "External Id",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "host_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Host Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "NR\nIG\nOK",
+   "read_only": 1,
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Long Text",
+   "label": "Error Message",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "label": "Ip Address",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "registered_node_id",
+   "fieldtype": "Link",
+   "label": "Registered Node Id",
+   "options": "Node",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "attempt_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Attempt Count",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-06-02 13:17:01.423131",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Registration Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

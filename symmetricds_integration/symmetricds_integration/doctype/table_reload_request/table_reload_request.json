@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "autoname": "format:{source_node_id}::{target_node_id}::{router_id}::{trigger_id}",
+ "creation": "2021-05-31 10:54:38.972837",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source_node_id",
+  "router_id",
+  "load_id",
+  "processed",
+  "column_break_5",
+  "target_node_id",
+  "trigger_id",
+  "channel_id",
+  "section_break_9",
+  "reload_select",
+  "column_break_11",
+  "before_custom_sql",
+  "column_break_13",
+  "reload_time",
+  "create_table",
+  "delete_first"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_node_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source Node",
+   "options": "Node",
+   "reqd": 1
+  },
+  {
+   "fieldname": "router_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Router",
+   "options": "Router",
+   "reqd": 1
+  },
+  {
+   "fieldname": "load_id",
+   "fieldtype": "Int",
+   "label": "Load Id",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "processed",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Processed",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_node_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target Node",
+   "options": "Node",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trigger_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Trigger",
+   "options": "Trigger",
+   "reqd": 1
+  },
+  {
+   "fieldname": "channel_id",
+   "fieldtype": "Link",
+   "label": "Channel",
+   "options": "Channel",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reload_select",
+   "fieldtype": "Code",
+   "label": "Reload Select"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "before_custom_sql",
+   "fieldtype": "Code",
+   "label": "Before Custom Sql"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reload_time",
+   "fieldtype": "Datetime",
+   "label": "Reload Time",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "create_table",
+   "fieldtype": "Check",
+   "label": "Create Table",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "delete_first",
+   "fieldtype": "Check",
+   "label": "Delete First",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-31 10:54:38.972837",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Table Reload Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

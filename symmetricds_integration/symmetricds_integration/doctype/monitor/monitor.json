@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "autoname": "field:monitor_id",
+ "creation": "2021-05-28 18:22:08.314226",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "monitor_id",
+  "node_group_id",
+  "enabled",
+  "column_break_4",
+  "type",
+  "external_id",
+  "section_break_7",
+  "expression",
+  "column_break_9",
+  "threshold",
+  "run_period",
+  "run_count",
+  "severity_level"
+ ],
+ "fields": [
+  {
+   "fieldname": "monitor_id",
+   "fieldtype": "Data",
+   "label": "Monitor Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "ALL",
+   "fieldname": "node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Enabled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "cpu\ndisk\nmemory\nbatchError\nbatchUnsent\ndataGap\ndataUnrouted\nlog",
+   "reqd": 1
+  },
+  {
+   "default": "ALL",
+   "fieldname": "external_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "External Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expression",
+   "fieldtype": "Code",
+   "label": "Expression"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "threshold",
+   "fieldtype": "Int",
+   "label": "Threshold",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "run_period",
+   "fieldtype": "Int",
+   "label": "Run Period",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "run_count",
+   "fieldtype": "Int",
+   "label": "Run Count",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "severity_level",
+   "fieldtype": "Int",
+   "label": "Severity Level",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [
+  {
+   "link_doctype": "Monitor Event",
+   "link_fieldname": "monitor_id"
+  }
+ ],
+ "modified": "2021-06-02 13:49:13.572166",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Monitor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

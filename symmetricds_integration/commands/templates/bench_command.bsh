@@ -1,0 +1,17 @@
+import org.apache.commons.io.FilenameUtils;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+sym_directory=dirname(pathToFile( getSourceFileInfo() ).getAbsolutePath()) + "/";
+sym_app_directory = FilenameUtils.normalize(sym_directory + "/../symmetricds_integration/");
+command="{bench_command}";
+Process p = Runtime.getRuntime().exec("sudo -u frappe python3 " + sym_app_directory + "scripts/bench_cmd_bsh.py " + command);
+p.waitFor();
+System.out.println("Execution complete.");
+BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
+StringBuilder logCommandOutput = new StringBuilder();
+String line;
+while( (line = in.readLine()) != null) {
+  logCommandOutput.append("\\n" + line);
+}
+in.close();
+System.out.println("Output: " + logCommandOutput.toString());

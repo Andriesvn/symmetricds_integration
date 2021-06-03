@@ -1,0 +1,28 @@
+import org.apache.commons.io.FilenameUtils;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+sym_directory=dirname(pathToFile( getSourceFileInfo() ).getAbsolutePath()) + "/";
+sym_app_directory = FilenameUtils.normalize(sym_directory + "/../symmetricds_integration/");
+apps_directory = FilenameUtils.normalize(sym_directory + "/../../");
+bench_directory = FilenameUtils.normalize(apps_directory + "/../");
+System.out.println("Sym Server Directory:  " + sym_directory);
+System.out.println("Sym App Directory:  " + sym_app_directory);
+System.out.println("Apps Directory: " + apps_directory);
+System.out.println("Bench Directory: " + bench_directory);
+
+Process p = Runtime.getRuntime().exec("sudo -u frappe python3 " + sym_app_directory + "scripts/bench_cmd_bsh.py version");
+
+p.waitFor();
+
+System.out.println("Execution complete.");
+
+// Read the output of the ping command and log it
+BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
+StringBuilder logCommandOutput = new StringBuilder();
+String line;
+while( (line = in.readLine()) != null) {
+  logCommandOutput.append("\\n" + line);
+}
+in.close();
+System.out.println("Output: " + logCommandOutput.toString());

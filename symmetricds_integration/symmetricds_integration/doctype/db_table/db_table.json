@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "autoname": "field:table_name",
+ "creation": "2021-05-26 12:40:30.326012",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "table_name",
+  "engine"
+ ],
+ "fields": [
+  {
+   "fieldname": "table_name",
+   "fieldtype": "Data",
+   "label": "Table Name",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "engine",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Engine",
+   "reqd": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [
+  {
+   "group": "Config",
+   "link_doctype": "Trigger",
+   "link_fieldname": "source_table_name"
+  },
+  {
+   "group": "Config",
+   "link_doctype": "Transform Table",
+   "link_fieldname": "source_table_name"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Extract Request",
+   "link_fieldname": "table_name"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Captured Data",
+   "link_fieldname": "table_name"
+  }
+ ],
+ "modified": "2021-06-02 14:03:05.182464",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "DB Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

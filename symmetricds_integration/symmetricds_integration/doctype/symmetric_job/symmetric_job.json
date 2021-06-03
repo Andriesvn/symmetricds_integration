@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "autoname": "field:job_name",
+ "creation": "2021-05-28 15:32:22.604129",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_name",
+  "description",
+  "column_break_3",
+  "job_type",
+  "node_group_id",
+  "section_break_6",
+  "job_expression",
+  "column_break_8",
+  "default_schedule",
+  "default_auto_start",
+  "requires_registration"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_name",
+   "fieldtype": "Data",
+   "label": "Job Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "SQL",
+   "fieldname": "job_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Type",
+   "options": "SQL\nJAVA\nBSH",
+   "reqd": 1
+  },
+  {
+   "fieldname": "node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_expression",
+   "fieldtype": "Code",
+   "label": "Expression"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_schedule",
+   "fieldtype": "Data",
+   "label": "Default Schedule"
+  },
+  {
+   "default": "1",
+   "fieldname": "default_auto_start",
+   "fieldtype": "Check",
+   "label": "Default Auto Start",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "requires_registration",
+   "fieldtype": "Check",
+   "label": "Registration Required",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-31 16:13:28.365012",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Symmetric Job",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

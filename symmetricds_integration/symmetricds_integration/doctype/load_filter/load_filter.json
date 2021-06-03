@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "autoname": "field:load_filter_id",
+ "creation": "2021-05-28 15:51:45.850308",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "load_filter_id",
+  "source_node_group_id",
+  "load_filter_order",
+  "column_break_4",
+  "load_filter_type",
+  "target_node_group_id",
+  "fail_on_error",
+  "section_break_8",
+  "target_catalog_name",
+  "filter_on_insert",
+  "column_break_11",
+  "target_schema_name",
+  "filter_on_update",
+  "column_break_14",
+  "target_table_name",
+  "filter_on_delete",
+  "section_break_17",
+  "before_write_script",
+  "batch_complete_script",
+  "column_break_20",
+  "after_write_script",
+  "batch_commit_script",
+  "column_break_23",
+  "handle_error_script",
+  "batch_rollback_script"
+ ],
+ "fields": [
+  {
+   "fieldname": "load_filter_id",
+   "fieldtype": "Data",
+   "label": "Load Filter Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "source_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "load_filter_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Load Filter Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "JAVA",
+   "fieldname": "load_filter_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "BSH\nJAVA\nSQL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "fail_on_error",
+   "fieldtype": "Check",
+   "label": "Fail on Error",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "target_catalog_name",
+   "fieldtype": "Data",
+   "label": "Target Catalog"
+  },
+  {
+   "default": "1",
+   "fieldname": "filter_on_insert",
+   "fieldtype": "Check",
+   "label": "Filter on Insert",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_schema_name",
+   "fieldtype": "Data",
+   "label": "Target Schema"
+  },
+  {
+   "default": "1",
+   "fieldname": "filter_on_update",
+   "fieldtype": "Check",
+   "label": "Filter on Update",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_table_name",
+   "fieldtype": "Data",
+   "label": "Target Table"
+  },
+  {
+   "default": "1",
+   "fieldname": "filter_on_delete",
+   "fieldtype": "Check",
+   "label": "Filter on Delete",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "before_write_script",
+   "fieldtype": "Code",
+   "label": "Before Write Script"
+  },
+  {
+   "fieldname": "batch_complete_script",
+   "fieldtype": "Code",
+   "label": "Batch Complete Script"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "after_write_script",
+   "fieldtype": "Code",
+   "label": "After Write Script"
+  },
+  {
+   "fieldname": "batch_commit_script",
+   "fieldtype": "Code",
+   "label": "Batch Commit Script"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handle_error_script",
+   "fieldtype": "Code",
+   "label": "Handle Error Script"
+  },
+  {
+   "fieldname": "batch_rollback_script",
+   "fieldtype": "Code",
+   "label": "Batch Rollback Script"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-28 15:51:45.850308",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Load Filter",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

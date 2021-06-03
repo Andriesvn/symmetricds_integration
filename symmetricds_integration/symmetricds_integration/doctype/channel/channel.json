@@ -1,0 +1,259 @@
+{
+ "actions": [],
+ "autoname": "field:channel_id",
+ "creation": "2021-05-24 09:38:57.803713",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "channel_id",
+  "processing_order",
+  "column_break_3",
+  "description",
+  "enabled",
+  "batch_details_section",
+  "max_batch_size",
+  "max_data_to_route",
+  "batch_algorithm",
+  "queue",
+  "data_event_action",
+  "column_break_12",
+  "max_batch_to_send",
+  "extract_period_millis",
+  "data_loader_type",
+  "max_network_kbps",
+  "column_break_17",
+  "use_old_data_to_route",
+  "use_row_data_to_route",
+  "use_pk_data_to_route",
+  "reload_flag",
+  "file_sync_flag",
+  "contains_big_lob"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "channel_id",
+   "fieldtype": "Data",
+   "label": "Channel Id",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "1",
+   "fieldname": "processing_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Processing Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Enabled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_details_section",
+   "fieldtype": "Section Break",
+   "label": "Batch Details"
+  },
+  {
+   "default": "1000",
+   "fieldname": "max_batch_size",
+   "fieldtype": "Int",
+   "label": "Max Batch Size",
+   "reqd": 1
+  },
+  {
+   "default": "100000",
+   "fieldname": "max_data_to_route",
+   "fieldtype": "Int",
+   "label": "Max Data To Route",
+   "reqd": 1
+  },
+  {
+   "default": "default",
+   "fieldname": "batch_algorithm",
+   "fieldtype": "Select",
+   "label": "Batch Algorithm",
+   "options": "default\ntransactional\nnontransactional",
+   "reqd": 1
+  },
+  {
+   "default": "default",
+   "fieldname": "queue",
+   "fieldtype": "Data",
+   "label": "Queue Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_event_action",
+   "fieldtype": "Select",
+   "label": "Data Event Action",
+   "options": "\nP\nW"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "60",
+   "fieldname": "max_batch_to_send",
+   "fieldtype": "Int",
+   "label": "Max Batch To Send",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "extract_period_millis",
+   "fieldtype": "Int",
+   "label": "Extract Period (ms)",
+   "reqd": 1
+  },
+  {
+   "default": "default",
+   "fieldname": "data_loader_type",
+   "fieldtype": "Select",
+   "label": "Data Loader Type",
+   "options": "default\nftp_localhost\nbulk",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "max_network_kbps",
+   "fieldtype": "Float",
+   "label": "Max KB/s",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "use_old_data_to_route",
+   "fieldtype": "Check",
+   "label": "Use Old Data to Route",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "use_row_data_to_route",
+   "fieldtype": "Check",
+   "label": "Use Row Data to Route",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "use_pk_data_to_route",
+   "fieldtype": "Check",
+   "label": "Use PK Data to Route",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "reload_flag",
+   "fieldtype": "Check",
+   "label": "Is Reload Channel",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "file_sync_flag",
+   "fieldtype": "Check",
+   "label": "Is FileSync Channel",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "contains_big_lob",
+   "fieldtype": "Check",
+   "label": "Contains Big Blob",
+   "reqd": 1
+  }
+ ],
+ "is_virtual": 1,
+ "links": [
+  {
+   "group": "Config",
+   "link_doctype": "Trigger",
+   "link_fieldname": "channel_id"
+  },
+  {
+   "group": "Config",
+   "link_doctype": "Conflict",
+   "link_fieldname": "target_channel_id"
+  },
+  {
+   "group": "Config",
+   "link_doctype": "Node Channel Control",
+   "link_fieldname": "channel_id"
+  },
+  {
+   "group": "Config",
+   "link_doctype": "Node Group Channel Window",
+   "link_fieldname": "channel_id"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Incoming Batch",
+   "link_fieldname": "channel_id"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Outgoing Batch",
+   "link_fieldname": "channel_id"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Captured Data",
+   "link_fieldname": "channel_id"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Node Host Channel Stats",
+   "link_fieldname": "channel_id"
+  }
+ ],
+ "modified": "2021-06-02 13:39:37.622663",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Channel",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "channel_id",
+ "sort_order": "ASC"
+}

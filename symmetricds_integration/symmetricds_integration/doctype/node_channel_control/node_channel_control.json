@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "autoname": "format:{node_id}::{channel_id}",
+ "creation": "2021-05-28 16:52:01.642051",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "node_id",
+  "channel_id",
+  "last_extract_time",
+  "column_break_4",
+  "suspend_enabled",
+  "ignore_enabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "node_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node",
+   "options": "Node",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "channel_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Channel",
+   "options": "Channel",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_extract_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Last Extract Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "suspend_enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Suspended",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ignore_enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ignored",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-06-02 13:40:22.518654",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Node Channel Control",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

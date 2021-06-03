@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include symmetricds_integration *.css
+recursive-include symmetricds_integration *.csv
+recursive-include symmetricds_integration *.html
+recursive-include symmetricds_integration *.ico
+recursive-include symmetricds_integration *.js
+recursive-include symmetricds_integration *.json
+recursive-include symmetricds_integration *.md
+recursive-include symmetricds_integration *.png
+recursive-include symmetricds_integration *.py
+recursive-include symmetricds_integration *.svg
+recursive-include symmetricds_integration *.txt
+recursive-exclude symmetricds_integration *.pyc

@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "autoname": "format:{data_id}::{batch_id}",
+ "creation": "2021-05-28 13:04:54.472609",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "data_id",
+  "batch_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Data Id",
+   "options": "Captured Data",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Batch Id",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-28 13:07:06.876101",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Data Event",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

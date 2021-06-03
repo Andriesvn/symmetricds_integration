@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "field:sequence_name",
+ "creation": "2021-05-31 10:37:44.445294",
+ "description": "A table that supports application level sequence numbering.",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sequence_name",
+  "min_value",
+  "cache_size",
+  "column_break_4",
+  "current_value",
+  "max_value",
+  "column_break_7",
+  "increment_by",
+  "cycle_flag"
+ ],
+ "fields": [
+  {
+   "fieldname": "sequence_name",
+   "fieldtype": "Data",
+   "label": "Sequence Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "min_value",
+   "fieldtype": "Int",
+   "label": "Min Value",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cache_size",
+   "fieldtype": "Int",
+   "label": "Cache Size",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "current_value",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Current Value",
+   "reqd": 1
+  },
+  {
+   "default": "9999999999",
+   "fieldname": "max_value",
+   "fieldtype": "Int",
+   "label": "Max Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "increment_by",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Increment By",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cycle_flag",
+   "fieldtype": "Check",
+   "label": "Cycle",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-31 10:37:44.445294",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Sym Sequence",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

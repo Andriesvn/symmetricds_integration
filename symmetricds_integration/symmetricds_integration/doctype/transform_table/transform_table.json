@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "autoname": "format:{transform_id}::{source_node_group_id}::{target_node_group_id}",
+ "creation": "2021-05-31 11:56:04.789047",
+ "description": "Defines a data loader transformation which can be used to map arbitrary tables and columns to other tables and columns.",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transform_id",
+  "source_node_group_id",
+  "column_break_3",
+  "transform_point",
+  "target_node_group_id",
+  "section_break_6",
+  "description",
+  "section_break_8",
+  "source_catalog_name",
+  "target_catalog_name",
+  "column_break_11",
+  "source_schema_name",
+  "target_schema_name",
+  "column_break_14",
+  "source_table_name",
+  "target_table_name",
+  "config_section",
+  "update_action",
+  "delete_action",
+  "transform_order",
+  "column_break_21",
+  "update_first",
+  "column_policy"
+ ],
+ "fields": [
+  {
+   "fieldname": "transform_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Transform Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transform_point",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Transform Point",
+   "options": "EXTRACT\nLOAD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "source_catalog_name",
+   "fieldtype": "Data",
+   "label": "Source Catalog"
+  },
+  {
+   "fieldname": "target_catalog_name",
+   "fieldtype": "Data",
+   "label": "Target Catalog"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_schema_name",
+   "fieldtype": "Data",
+   "label": "Source Schema"
+  },
+  {
+   "fieldname": "target_schema_name",
+   "fieldtype": "Data",
+   "label": "Target Schema"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_table_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Table",
+   "options": "DB Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_table_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Target Table Name"
+  },
+  {
+   "fieldname": "config_section",
+   "fieldtype": "Section Break",
+   "label": "Config"
+  },
+  {
+   "default": "UPD_ROW",
+   "fieldname": "update_action",
+   "fieldtype": "Select",
+   "label": "Update Action",
+   "options": "NONE\nINS_ROW\nUPD_ROW\nDEL_ROW",
+   "reqd": 1
+  },
+  {
+   "default": "DEL_ROW",
+   "fieldname": "delete_action",
+   "fieldtype": "Select",
+   "label": "Delete Action",
+   "options": "NONE\nDEL_ROW\nUPDATE_COL",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "transform_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Transform Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "update_first",
+   "fieldtype": "Check",
+   "label": "Update First",
+   "reqd": 1
+  },
+  {
+   "default": "SPECIFIED",
+   "fieldname": "column_policy",
+   "fieldtype": "Select",
+   "label": "Column Policy",
+   "options": "SPECIFIED\nIMPLIED",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-31 11:56:04.789047",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Transform Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

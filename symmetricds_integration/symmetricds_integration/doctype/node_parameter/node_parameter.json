@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "autoname": "format:{external_id}::{node_group_id}::{param_key}",
+ "creation": "2021-05-31 10:08:43.446709",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "external_id",
+  "param_key",
+  "column_break_3",
+  "node_group_id",
+  "section_break_5",
+  "param_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "external_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "External_id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "param_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Param Key",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "param_value",
+   "fieldtype": "Data",
+   "label": "Param Value"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-31 10:08:43.446709",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Node Parameter",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

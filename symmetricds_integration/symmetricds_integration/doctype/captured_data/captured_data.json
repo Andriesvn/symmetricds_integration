@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "autoname": "format:{data_id}",
+ "creation": "2021-05-28 12:43:49.012885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "data_id",
+  "table_name",
+  "trigger_hist_id",
+  "source_node_id",
+  "column_break_5",
+  "event_type",
+  "channel_id",
+  "transaction_id",
+  "data_section",
+  "pk_data",
+  "node_list",
+  "column_break_12",
+  "old_data",
+  "external_data",
+  "column_break_15",
+  "row_data",
+  "is_prerouted"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_id",
+   "fieldtype": "Int",
+   "label": "Data Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "table_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Table Name",
+   "options": "DB Table",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "trigger_hist_id",
+   "fieldtype": "Int",
+   "label": "Trigger Hist Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "source_node_id",
+   "fieldtype": "Link",
+   "label": "Source Node",
+   "options": "Node"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Event Type",
+   "options": "I\nU\nD\nR\nS\nC\nB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "channel_id",
+   "fieldtype": "Link",
+   "label": "Channel",
+   "options": "Channel",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transaction_id",
+   "fieldtype": "Data",
+   "label": "Transaction ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_section",
+   "fieldtype": "Section Break",
+   "label": "Data"
+  },
+  {
+   "fieldname": "pk_data",
+   "fieldtype": "Long Text",
+   "label": "Primary Keys"
+  },
+  {
+   "fieldname": "node_list",
+   "fieldtype": "Long Text",
+   "label": "Node List",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "old_data",
+   "fieldtype": "Long Text",
+   "label": "Old Data"
+  },
+  {
+   "fieldname": "external_data",
+   "fieldtype": "Data",
+   "label": "External Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "row_data",
+   "fieldtype": "Long Text",
+   "label": "Row Data"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_prerouted",
+   "fieldtype": "Check",
+   "label": "Prerouted",
+   "reqd": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-06-02 13:31:04.287871",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Captured Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "data_id",
+ "sort_order": "ASC"
+}

@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "autoname": "field:conflict_id",
+ "creation": "2021-05-28 11:43:49.927701",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "conflict_id",
+  "source_node_group_id",
+  "detect_type",
+  "column_break_4",
+  "target_node_group_id",
+  "target_channel_id",
+  "resolve_type",
+  "target_config_section",
+  "target_catalog_name",
+  "column_break_10",
+  "target_schema_name",
+  "column_break_12",
+  "target_table_name",
+  "resolve_config_section",
+  "detect_expression",
+  "column_break_16",
+  "resolve_changes_only",
+  "resolve_row_only",
+  "ping_back"
+ ],
+ "fields": [
+  {
+   "fieldname": "conflict_id",
+   "fieldtype": "Data",
+   "label": "Conflict Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "source_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "default": "use_changed_data",
+   "fieldname": "detect_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Detect Type",
+   "options": "use_pk_data\nuse_changed_data\nuse_old_data\nuse_timestamp\nuse_version",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_channel_id",
+   "fieldtype": "Link",
+   "label": "Target Channel",
+   "options": "Channel"
+  },
+  {
+   "default": "newer_wins",
+   "fieldname": "resolve_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Resolve Type",
+   "options": "newer_wins\nfallback\nignore\nmanual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_config_section",
+   "fieldtype": "Section Break",
+   "label": "Target Config"
+  },
+  {
+   "fieldname": "target_catalog_name",
+   "fieldtype": "Data",
+   "label": "Target Catalog"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_schema_name",
+   "fieldtype": "Data",
+   "label": "Target Schema"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_table_name",
+   "fieldtype": "Data",
+   "label": "Target Table"
+  },
+  {
+   "fieldname": "resolve_config_section",
+   "fieldtype": "Section Break",
+   "label": "Resolve Config"
+  },
+  {
+   "fieldname": "detect_expression",
+   "fieldtype": "Code",
+   "label": "Detect Expression"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "resolve_changes_only",
+   "fieldtype": "Check",
+   "label": "Resolve Changes Only",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "resolve_row_only",
+   "fieldtype": "Check",
+   "label": "Resolve Row Only",
+   "reqd": 1
+  },
+  {
+   "default": "OFF",
+   "fieldname": "ping_back",
+   "fieldtype": "Select",
+   "label": "Ping Back",
+   "options": "OFF\nSINGLE_ROW\nREMAINING_ROWS",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-28 11:55:36.710601",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Conflict",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

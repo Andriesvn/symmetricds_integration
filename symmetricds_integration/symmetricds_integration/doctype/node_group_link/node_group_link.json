@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "autoname": "format:{source_node_group_id}::{target_node_group_id}",
+ "creation": "2021-05-26 12:27:05.728029",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source_node_group_id",
+  "column_break_2",
+  "target_node_group_id",
+  "link_config",
+  "data_event_action",
+  "column_break_6",
+  "sync_config_enabled",
+  "column_break_8",
+  "is_reversible"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "source_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "target_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link_config",
+   "fieldtype": "Section Break",
+   "label": "Link Config"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "W",
+   "fieldname": "data_event_action",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Data Event Action",
+   "options": "P\nW",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "1",
+   "fieldname": "sync_config_enabled",
+   "fieldtype": "Check",
+   "label": "Sync Config",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_reversible",
+   "fieldtype": "Check",
+   "label": "Reversible",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-31 12:56:25.597769",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Node Group Link",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

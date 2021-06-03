@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "autoname": "format:{node_id}::{queue}::{communication_type}",
+ "creation": "2021-05-28 16:43:29.199850",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "node_id",
+  "node_priority",
+  "column_break_3",
+  "queue",
+  "lock_time",
+  "column_break_6",
+  "communication_type",
+  "locking_server_id",
+  "section_break_9",
+  "last_lock_time",
+  "success_count",
+  "skip_count",
+  "total_success_count",
+  "total_fail_count",
+  "column_break_15",
+  "last_lock_millis",
+  "fail_count",
+  "batch_to_send_count",
+  "total_success_millis",
+  "total_fail_millis"
+ ],
+ "fields": [
+  {
+   "fieldname": "node_id",
+   "fieldtype": "Link",
+   "label": "Node",
+   "options": "Node",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "node_priority",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Priority"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "queue",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Queue",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "lock_time",
+   "fieldtype": "Datetime",
+   "label": "Lock Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "communication_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "PUSH\nPULL",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "locking_server_id",
+   "fieldtype": "Data",
+   "label": "Locking Server",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "last_lock_time",
+   "fieldtype": "Datetime",
+   "label": "Last Lock Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "success_count",
+   "fieldtype": "Int",
+   "label": "Success Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "skip_count",
+   "fieldtype": "Int",
+   "label": "Skip Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_success_count",
+   "fieldtype": "Int",
+   "label": "Total Success Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_fail_count",
+   "fieldtype": "Int",
+   "label": "Total Fail Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_lock_millis",
+   "fieldtype": "Int",
+   "label": "Last Lock (ms)"
+  },
+  {
+   "fieldname": "fail_count",
+   "fieldtype": "Int",
+   "label": "Fail Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "batch_to_send_count",
+   "fieldtype": "Int",
+   "label": "To Send Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_success_millis",
+   "fieldtype": "Int",
+   "label": "Total Success (ms)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_fail_millis",
+   "fieldtype": "Int",
+   "label": "Total Fail (ms)",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-28 16:43:29.199850",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Node Communication",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

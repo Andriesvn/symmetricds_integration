@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "autoname": "field:router_id",
+ "creation": "2021-05-26 09:09:48.492961",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "router_id",
+  "router_type",
+  "column_break_3",
+  "source_node_group_id",
+  "description",
+  "column_break_6",
+  "target_node_group_id",
+  "router_config_section",
+  "router_expression",
+  "column_break_10",
+  "sync_on_insert",
+  "sync_on_update",
+  "sync_on_delete",
+  "use_source_catalog_schema",
+  "target_config_section",
+  "target_catalog_name",
+  "column_break_17",
+  "target_schema_name",
+  "column_break_19",
+  "target_table_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "router_id",
+   "fieldtype": "Data",
+   "label": "Router Id",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "default": "default",
+   "fieldname": "router_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Router Type",
+   "options": "default\ncolumn\nsubselect\naudit\nlookuptable\nbsh\ncsv\ndbf",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "router_config_section",
+   "fieldtype": "Section Break",
+   "label": "Router Config"
+  },
+  {
+   "fieldname": "router_expression",
+   "fieldtype": "Code",
+   "label": "Router Expression"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "sync_on_insert",
+   "fieldtype": "Check",
+   "label": "Sync on Insert",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "sync_on_update",
+   "fieldtype": "Check",
+   "label": "Sync on Update",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "sync_on_delete",
+   "fieldtype": "Check",
+   "label": "Sync on Delete",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "use_source_catalog_schema",
+   "fieldtype": "Check",
+   "label": "Use Source Catalog Schema",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "target_config_section",
+   "fieldtype": "Section Break",
+   "label": "Target Config"
+  },
+  {
+   "fieldname": "target_catalog_name",
+   "fieldtype": "Data",
+   "label": "Target Catalog Name"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_schema_name",
+   "fieldtype": "Data",
+   "label": "Target Schema Name"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_table_name",
+   "fieldtype": "Data",
+   "label": "Target Table Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [
+  {
+   "group": "Config",
+   "link_doctype": "Trigger Router",
+   "link_fieldname": "router_id"
+  },
+  {
+   "group": "Stats",
+   "link_doctype": "Extract Request",
+   "link_fieldname": "router_id"
+  }
+ ],
+ "modified": "2021-06-02 14:07:17.900078",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Router",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

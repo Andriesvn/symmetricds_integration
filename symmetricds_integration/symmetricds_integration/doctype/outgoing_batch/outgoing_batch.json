@@ -1,0 +1,528 @@
+{
+ "actions": [],
+ "autoname": "format:{batch_id}::{node_id}",
+ "creation": "2021-05-31 09:55:20.793990",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "batch_id",
+  "channel_id",
+  "error_flag",
+  "column_break_4",
+  "node_id",
+  "status",
+  "error_section",
+  "sql_message",
+  "column_break_9",
+  "sql_state",
+  "sql_code",
+  "failed_data_id",
+  "failed_line_number",
+  "summary_section",
+  "summary",
+  "column_break_17",
+  "load_id",
+  "common_flag",
+  "statistics_section",
+  "ignore_count",
+  "skip_count",
+  "extract_count",
+  "reload_row_count",
+  "extract_row_count",
+  "data_insert_row_count",
+  "extract_insert_row_count",
+  "load_insert_row_count",
+  "fallback_insert_count",
+  "network_millis",
+  "router_millis",
+  "transform_extract_millis",
+  "total_extract_millis",
+  "extract_start_time",
+  "column_break_32",
+  "byte_count",
+  "sent_count",
+  "other_row_count",
+  "load_row_count",
+  "data_update_row_count",
+  "extract_update_row_count",
+  "load_update_row_count",
+  "fallback_update_count",
+  "filter_millis",
+  "extract_millis",
+  "transform_load_millis",
+  "total_load_millis",
+  "transfer_start_time",
+  "column_break_43",
+  "load_flag",
+  "load_count",
+  "data_row_count",
+  "data_delete_row_count",
+  "extract_delete_row_count",
+  "load_delete_row_count",
+  "missing_delete_count",
+  "load_millis",
+  "ignore_row_count",
+  "extract_job_flag",
+  "load_start_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch_id",
+   "fieldtype": "Int",
+   "label": "Batch Id",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "channel_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Channel",
+   "options": "Channel",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "error_flag",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Error",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "node_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node",
+   "options": "Node",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "OK\nER\nSE\nRT\nRQ\nNE\nQY\nLD\nIG"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.status == 'ER'",
+   "fieldname": "error_section",
+   "fieldtype": "Section Break",
+   "label": "Error"
+  },
+  {
+   "fieldname": "sql_message",
+   "fieldtype": "Long Text",
+   "label": "Message",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sql_state",
+   "fieldtype": "Data",
+   "label": "State",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sql_code",
+   "fieldtype": "Int",
+   "label": "Error Code"
+  },
+  {
+   "default": "0",
+   "fieldname": "failed_data_id",
+   "fieldtype": "Link",
+   "label": "Failed Data",
+   "options": "Captured Data",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "failed_line_number",
+   "fieldtype": "Int",
+   "label": "Failed Line Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Long Text",
+   "label": "Batch Summary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "load_id",
+   "fieldtype": "Int",
+   "label": "Load Id",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "common_flag",
+   "fieldtype": "Check",
+   "label": "Is Shared",
+   "read_only": 1
+  },
+  {
+   "fieldname": "statistics_section",
+   "fieldtype": "Section Break",
+   "label": "Statistics"
+  },
+  {
+   "default": "0",
+   "fieldname": "ignore_count",
+   "fieldtype": "Int",
+   "label": "Ignore Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "skip_count",
+   "fieldtype": "Int",
+   "label": "Skip Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "extract_count",
+   "fieldtype": "Int",
+   "label": "Extract Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "reload_row_count",
+   "fieldtype": "Int",
+   "label": "Reload Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "extract_row_count",
+   "fieldtype": "Int",
+   "label": "Extract Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "data_insert_row_count",
+   "fieldtype": "Int",
+   "label": "Data Insert Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "extract_insert_row_count",
+   "fieldtype": "Int",
+   "label": "Extract Insert Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "load_insert_row_count",
+   "fieldtype": "Int",
+   "label": "Load Insert Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "fallback_insert_count",
+   "fieldtype": "Int",
+   "label": "Fallback Insert Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "network_millis",
+   "fieldtype": "Int",
+   "label": "Network (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "o",
+   "fieldname": "router_millis",
+   "fieldtype": "Int",
+   "label": "Router (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "transform_extract_millis",
+   "fieldtype": "Int",
+   "label": "Transform Extract (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_extract_millis",
+   "fieldtype": "Int",
+   "label": "Total Extract (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "extract_start_time",
+   "fieldtype": "Datetime",
+   "label": "Extract Start Time",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "byte_count",
+   "fieldtype": "Int",
+   "label": "Byte Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sent_count",
+   "fieldtype": "Int",
+   "label": "Sent Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "other_row_count",
+   "fieldtype": "Int",
+   "label": "Other Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "load_row_count",
+   "fieldtype": "Int",
+   "label": "Load Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "data_update_row_count",
+   "fieldtype": "Int",
+   "label": "Data Update Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "extract_update_row_count",
+   "fieldtype": "Int",
+   "label": "Extract Update Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "load_update_row_count",
+   "fieldtype": "Int",
+   "label": "Load Update Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "fallback_update_count",
+   "fieldtype": "Int",
+   "label": "Fallback Update Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "filter_millis",
+   "fieldtype": "Int",
+   "label": "Filter (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "extract_millis",
+   "fieldtype": "Int",
+   "label": "Extract (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "transform_load_millis",
+   "fieldtype": "Int",
+   "label": "Transform Load (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_load_millis",
+   "fieldtype": "Int",
+   "label": "Total Load (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "transfer_start_time",
+   "fieldtype": "Datetime",
+   "label": "Transfer Start Time",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "load_flag",
+   "fieldtype": "Check",
+   "label": "Is Initial Load",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "load_count",
+   "fieldtype": "Int",
+   "label": "Load Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "data_row_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Data Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "data_delete_row_count",
+   "fieldtype": "Int",
+   "label": "Data Delete Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "extract_delete_row_count",
+   "fieldtype": "Int",
+   "label": "Extract Delete Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "load_delete_row_count",
+   "fieldtype": "Int",
+   "label": "Load Delete Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "missing_delete_count",
+   "fieldtype": "Int",
+   "label": "Missing Delete Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "load_millis",
+   "fieldtype": "Int",
+   "label": "Load (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ignore_row_count",
+   "fieldtype": "Int",
+   "label": "Ignore Row Count",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "extract_job_flag",
+   "fieldtype": "Check",
+   "label": "Extract Job",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "load_start_time",
+   "fieldtype": "Datetime",
+   "label": "Load Start Time",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-31 14:54:36.045178",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Outgoing Batch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

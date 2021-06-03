@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "autoname": "field:trigger_hist_id",
+ "creation": "2021-05-31 12:28:33.443243",
+ "description": "A history of a table\u2019s definition and the trigger used to capture data from the table. When a database trigger captures a data change, it references a trigger_hist entry so it is possible to know which columns the data represents. trigger_hist entries are made during the sync trigger process, which runs at each startup, each night in the syncTriggersJob, or any time the syncTriggers() JMX method is manually invoked. A new entry is made when a table definition or a trigger definition is changed, which causes a database trigger to be created or rebuilt.",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trigger_hist_id",
+  "trigger_id",
+  "column_break_3",
+  "last_trigger_build_reason",
+  "inactive_time",
+  "section_break_6",
+  "source_table_name",
+  "name_for_insert_trigger",
+  "table_hash",
+  "column_break_10",
+  "source_catalog_name",
+  "name_for_update_trigger",
+  "trigger_row_hash",
+  "column_break_14",
+  "source_schema_name",
+  "name_for_delete_trigger",
+  "trigger_template_hash",
+  "section_break_18",
+  "column_names",
+  "column_break_20",
+  "pk_column_names",
+  "column_break_22",
+  "error_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "trigger_hist_id",
+   "fieldtype": "Data",
+   "label": "Trigger History Id",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "trigger_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Trigger",
+   "options": "Trigger",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_trigger_build_reason",
+   "fieldtype": "Data",
+   "label": "Last Build Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inactive_time",
+   "fieldtype": "Datetime",
+   "label": "Inactive Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "source_table_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Source Table",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "name_for_insert_trigger",
+   "fieldtype": "Data",
+   "label": "Insert Trigger Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "table_hash",
+   "fieldtype": "Int",
+   "label": "Table Hash"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_catalog_name",
+   "fieldtype": "Data",
+   "label": "Source Catalog",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name_for_update_trigger",
+   "fieldtype": "Data",
+   "label": "Update Trigger Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trigger_row_hash",
+   "fieldtype": "Int",
+   "label": "Trigger Row Hash",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_schema_name",
+   "fieldtype": "Data",
+   "label": "Source Schema",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name_for_delete_trigger",
+   "fieldtype": "Data",
+   "label": "Delete Trigger Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trigger_template_hash",
+   "fieldtype": "Int",
+   "label": "Trigger Template Hash",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_names",
+   "fieldtype": "Long Text",
+   "label": "Columns",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pk_column_names",
+   "fieldtype": "Long Text",
+   "label": "PK Columns",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Long Text",
+   "label": "Error Message",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [
+  {
+   "link_doctype": "Captured Data",
+   "link_fieldname": "trigger_hist_id"
+  }
+ ],
+ "modified": "2021-06-02 13:47:45.840896",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Trigger History",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

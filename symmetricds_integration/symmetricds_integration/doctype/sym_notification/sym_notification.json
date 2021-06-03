@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "autoname": "field:notification_id",
+ "creation": "2021-05-31 09:18:10.707647",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "notification_id",
+  "node_group_id",
+  "external_id",
+  "column_break_4",
+  "severity_level",
+  "type",
+  "enabled",
+  "section_break_8",
+  "expression"
+ ],
+ "fields": [
+  {
+   "fieldname": "notification_id",
+   "fieldtype": "Data",
+   "label": "Notification Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "ALL",
+   "fieldname": "node_group_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node Group",
+   "options": "Node Group",
+   "reqd": 1
+  },
+  {
+   "default": "ALL",
+   "fieldname": "external_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "External Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "severity_level",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Severity Level",
+   "reqd": 1
+  },
+  {
+   "default": "log",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "log\nemail",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Enabled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expression",
+   "fieldtype": "Code",
+   "label": "Expression"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-31 09:18:10.707647",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Sym Notification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

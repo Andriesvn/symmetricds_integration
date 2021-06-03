@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "autoname": "format:{request_id}",
+ "creation": "2021-05-28 13:46:04.716620",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request_id",
+  "node_id",
+  "column_break_3",
+  "queue",
+  "status",
+  "section_break_6",
+  "start_batch_id",
+  "trigger_id",
+  "load_id",
+  "column_break_10",
+  "end_batch_id",
+  "router_id",
+  "table_name",
+  "statistics_section",
+  "extracted_rows",
+  "transferred_rows",
+  "loaded_rows",
+  "last_transferred_batch_id",
+  "total_rows",
+  "parent_request_id",
+  "column_break_21",
+  "extracted_millis",
+  "transferred_millis",
+  "loaded_millis",
+  "last_loaded_batch_id",
+  "loaded_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Int",
+   "label": "Request Id",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "node_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Node",
+   "options": "Node",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "queue",
+   "fieldtype": "Data",
+   "label": "Queue",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "NE\nOK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_batch_id",
+   "fieldtype": "Int",
+   "label": "Start Batch Id",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "trigger_id",
+   "fieldtype": "Link",
+   "label": "Trigger",
+   "options": "Trigger",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "load_id",
+   "fieldtype": "Int",
+   "label": "Load Id",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_batch_id",
+   "fieldtype": "Int",
+   "label": "End Batch Id",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "router_id",
+   "fieldtype": "Link",
+   "label": "Router",
+   "options": "Router",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "table_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Table",
+   "options": "DB Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "statistics_section",
+   "fieldtype": "Section Break",
+   "label": "Statistics"
+  },
+  {
+   "default": "0",
+   "fieldname": "extracted_rows",
+   "fieldtype": "Int",
+   "label": "Extracted Rows",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "transferred_rows",
+   "fieldtype": "Int",
+   "label": "Transferred Rows",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "loaded_rows",
+   "fieldtype": "Int",
+   "label": "Loaded Rows",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_transferred_batch_id",
+   "fieldtype": "Int",
+   "label": "Last Transferred Batch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_rows",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Rows",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parent_request_id",
+   "fieldtype": "Int",
+   "label": "Parent Request Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "extracted_millis",
+   "fieldtype": "Int",
+   "label": "Extracted Time (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "transferred_millis",
+   "fieldtype": "Int",
+   "label": "Transferred Time (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "loaded_millis",
+   "fieldtype": "Int",
+   "label": "Loaded Time (ms)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_loaded_batch_id",
+   "fieldtype": "Int",
+   "label": "Last Loaded Batch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "loaded_time",
+   "fieldtype": "Datetime",
+   "label": "Loaded Time",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-28 16:14:05.805983",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Extract Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

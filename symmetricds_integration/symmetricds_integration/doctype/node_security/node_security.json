@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "autoname": "field:node_id",
+ "creation": "2021-05-28 18:10:26.582542",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "node_id",
+  "node_password",
+  "failed_logins",
+  "column_break_4",
+  "registration_enabled",
+  "registration_time",
+  "section_break_7",
+  "initial_load_time",
+  "rev_initial_load_time",
+  "column_break_10",
+  "initial_load_id",
+  "rev_initial_load_id",
+  "column_break_13",
+  "initial_load_create_by",
+  "rev_initial_load_create_by",
+  "column_break_16",
+  "initial_load_enabled",
+  "rev_initial_load_enabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "node_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Node",
+   "options": "Node",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "node_password",
+   "fieldtype": "Data",
+   "label": "Password",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "failed_logins",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Failed Logins",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "registration_enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Registration Enabled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registration_time",
+   "fieldtype": "Datetime",
+   "label": "Registration Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "initial_load_time",
+   "fieldtype": "Datetime",
+   "label": "Initial Load Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rev_initial_load_time",
+   "fieldtype": "Datetime",
+   "label": "Rev Initial Load Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initial_load_id",
+   "fieldtype": "Int",
+   "label": "Initial Load Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rev_initial_load_id",
+   "fieldtype": "Int",
+   "label": "Rev Initial Load Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initial_load_create_by",
+   "fieldtype": "Data",
+   "label": "Initial Load Created By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rev_initial_load_create_by",
+   "fieldtype": "Data",
+   "label": "Rev Initial Load Created By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "initial_load_enabled",
+   "fieldtype": "Check",
+   "label": "Initial Load Enabled",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "rev_initial_load_enabled",
+   "fieldtype": "Check",
+   "label": "Rev Initial Load Enabled",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2021-05-28 18:10:26.582542",
+ "modified_by": "Administrator",
+ "module": "Symmetricds Integration",
+ "name": "Node Security",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
