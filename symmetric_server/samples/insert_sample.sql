@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------------
 
 delete from sym_trigger_router;
-delete from sym_trigger
+delete from sym_trigger;
 delete from sym_file_trigger_router;
 delete from sym_file_trigger;
 delete from sym_router;
