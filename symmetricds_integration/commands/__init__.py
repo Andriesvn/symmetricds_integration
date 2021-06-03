@@ -45,6 +45,9 @@ def make_sds_config(context, engine_name, group_id, external_id, registration_ur
     properties_template = os.path.join(os.path.dirname(__file__),'templates','sync_template.properties')
     engine_dir = os.path.join(os.path.dirname(__file__),'..','..','symmetric_server','engines')
 
+    if not(os.path.exists(engine_dir)):
+        os.mkdir(engine_dir)
+
     print('site_path=', "{0}/{1}".format(sites_path, site_path))
     print('apps_path=',apps_path)
     configuration = frappe.get_site_config(sites_path=sites_path, site_path=site_path)
