@@ -67,9 +67,9 @@ bench --site site_name make-sds-config --engine-name engine_name --group-id grou
 This will create a {engine_name}-{external_id}.properties file inside your sites main directory and symlink it to the servers engine directory.
 
 It will use the database info (database name, username and password) contained inside your site_config file
-It will also generate a deafult sync_url of http://localhost:31415/sync/{engine_name}-{external_id} for your server witch will need to be changed if you are not in development
+It will also generate a deafult sync_url of http://localhost:31415/sync/{engine_name}-{external_id} for your server which will need to be changed if you are not in development
 
-Next we will need to greate all the sym tables for your engine
+Next we will need to create all the sym tables for your engine
 ```
 bench --site site_name create-sym-tables --engine-name engine_name
 ```
