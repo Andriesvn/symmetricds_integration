@@ -9,7 +9,7 @@ The end goal we would like to achieve is to be able to setup a Master Cloud Serv
 ALSO UNTIL VIRTUAL DOCTYPES ARE PROPERLY WORKING FRAPPE v13 YOU NEED TO APPLY THE FOLLOWING FIXES MANUALY IN FRAPPE
 https://github.com/frappe/frappe/issues/13321
 https://github.com/frappe/frappe/pull/13319/commits/d54ecd42237d61857302db296324e37babd7b1d0
-https://github.com/frappe/frappe/pull/13304/commits/baf4259596dadf8609103686a4dc3536da823434
+https://github.com/frappe/frappe/pull/13304
 
 ## Current Features
 1. Create and Link Engines to a Frappe Site
